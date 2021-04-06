@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .accordion {
+      background-color:lightgrey;
+      color:black ;
+      cursor: pointer;
+      padding: 18px;
+      width: 80%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.5s;
+    }
+
+    .active,
+    .accordion:hover {
+      background-color: darkgray;
+    }
+
+    .accordion:after {
+      content: '\2192';
+      color: #777;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+
+    .active::after {
+      content: "\2193";
+    }
+
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      width: 80%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>KTH Box FAQ</h2>
+  <p>Fr&aring;gor och svar om KTH Box</p>
+    <button class="accordion"> Vad &auml;r KTH BOX?</button>
+    <div class="panel">
+      <p> Box &auml;r en filsynkroniseringstj&auml;nst i molnet som &auml;r gemensamt upphandlad av h&ouml;gskolor/universitet i Sverige via SUNET. BOX ger dig m&ouml;jlighet att synkronisera dina personliga filer mellan datorer, telefon och plattor samt dela ut filer till kollegor och externa medarbetare p&aring; ett s&auml;kert s&auml;tt.</p></div>
+  
+  <button class="accordion"> Vilka kan anv&auml;nda sig av KTH BOX?</button>
+    <div class="panel">
+      <p> Box kommer att erbjudas till alla anst&auml;llda p&aring; KTH samt alla som anv&auml;nder sig av den centrala klientplattformen, KTH Windows (WIKS) och KTH Mac, som levereras av IT-Avdelningen.</p></div>
+  
+  <button class="accordion"> Kan jag best&auml;lla en gemensam eller projekt folder p&aring; KTH Box?</button>
+    <div class="panel">
+      <p> Fr&aring;n och med den 2019-05-24 s&aring; kan du best&auml;lla en opersonlig gemensam eller projektfolder p&aring; KTH Box. Kontakta it-support f&ouml;r best&auml;llning av gemensam/projektfolder.</p></div>
+  
+  <button class="accordion"> Hur mycket utrymme f&aring;r jag p&aring; KTH Box?</button>
+    <div class="panel">
+      <p> Du kommer att f&aring; tillg&aring;ng till obegr&auml;nsad utrymme p&aring; KTH BOX.</p></div>
+  
+  <button class="accordion"> Kan jag anv&auml;nda mig av KTH BOX som en gemensam/projekt area f&ouml;r skolan/avdelning?</button>
+    <div class="panel">
+      <p> Du kan anv&auml;nda dig av KTH BOX f&ouml;r att dela filer mellan kollegor men vi rekommenderar inte i dagsl&auml;get att du ers&auml;tter gemensam/projekt areor med KTH BOX. Se n&auml;sta punkt f&ouml;r vad du beh&ouml;ver t&auml;nka p&aring; delade foldrar/filer.</p></div>
+  
+  <button class="accordion"> Vad h&auml;nder med de delade foldrarna/filerna n&auml;r en anv&auml;ndare slutar och KTH BOX kontot st&auml;ngs av?</button>
+    <div class="panel">
+      <p> Tillg&aring;ng till delade foldrarna/filerna st&auml;ngs av n&auml;r KTH BOX kontot st&auml;ngs, detta pga att informationen &auml;r kopplad till den anv&auml;ndaren som delat ut foldern/filen.</p></div>
+  
+  <button class="accordion"> Hur stor kan en fil vara?</button>
+    <div class="panel">
+      <p> En fil f&aring;r max vara 15 gigabyte? N&auml;r man anv&auml;nder sig av den webbaserade tj&auml;nsten f&ouml;r att &ouml;verf&ouml;ra filer som &auml;r st&ouml;rre &auml;n 1GB s&aring; skall man f&ouml;lja denna guide https://intra.kth.se/it/support/guider/kth-box/ladda-upp-filer-1.362738</p></div>
+  
+  <button class="accordion"> Vad h&auml;nder om jag l&auml;gger upp en fil &ouml;ver 15 gigabyte?</button>
+    <div class="panel">
+      <p> Filen kommer inte att synkroniseras till KTH BOX. Du m&aring;ste sj&auml;lv se om filen lagts upp p&aring; KTH BOX d&aring; klienten inte varnar f&ouml;r detta. Anv&auml;nder man Box via webbl&auml;saren f&aring;r man en varning att det inte g&aring;r.</p></div>
+  
+  <button class="accordion"> Hur m&aring;nga filer jag ha i mitt KTH BOX konto?</button>
+    <div class="panel">
+      <p> 90 000 filer &auml;r maxgr&auml;nsen f&ouml;r antal filer p&aring; KTH BOX. D&aring; vi m&auml;rkt att n&auml;r man kommer upp till volymer p&aring; 10000 filer s&aring; hanteringen av dessa filer opraktisk och vi rekommenderar att du har max 20 000 filer p&aring; KTH BOX.</p></div>
+  
+  <button class="accordion"> Varf&ouml;r kan jag inte dela ut r&auml;ttigheter p&aring; en box katalog till studenter/icke kth anst&auml;llda med @kth.se eller @*.kth.se epostadress utan m&aring;ste skicka en l&auml;nk till dessa?</button>
+    <div class="panel">
+      <p> Box till&aring;ter endast anv&auml;ndare med KTH Box konton att dela ut r&auml;ttigheter till varandra. Anv&auml;ndare som inte &auml;r anst&auml;llda kan inte skapa ett KTH Box konto med sin @kth.se eller @*.kth.se epostadress och d&auml;rf&ouml;r kan man inte dela ut r&auml;ttigheter till dessa. Man f&aring;r d&aring; dela ut material via en l&auml;nk i st&auml;llet.</p></div>
+  
+  <button class="accordion"> Hur delar jag filer till studenter?</button>
+    <div class="panel">
+      <p> Det g&ouml;r du genom att skicka en l&auml;nk till filen/katalogen via epost till studenterna. F&ouml;lj denna guide Hur man delar mappar eller filer med studenter</p></div>
+  
+  <button class="accordion"> Varf&ouml;r kan jag inte skapa ett gratiskonto p&aring; box med min @kth.se eller @*.kth.se adress?</button>
+    <div class="panel">
+      <p> Du f&aring;r inte skapa ett gratis konto med @kth.se eller @*.kth.se adress d&aring; f&ouml;retagsversionen endast till&aring;ter anst&auml;llda att skapa konton.</p></div>
+  
+  <button class="accordion"> Varf&ouml;r f&aring;r jag access denied n&auml;r jag f&ouml;rs&ouml;ker skapa/logga in p&aring; KTH box?</button>
+    <div class="panel">
+      <p> Du f&aring;r detta meddelande d&aring; Box endast till&aring;ter anv&auml;ndare som &auml;r anst&auml;llda att skapa konton p&aring; deras f&ouml;retagsversion av Box?</p></div>
+  
+  <button class="accordion"> Vem kontaktar jag f&ouml;r support av BOX f&ouml;r KTH Anst&auml;llda?</button>
+    <div class="panel">
+      <p> Vid behov av support s&aring; g&aring;r man igenom BOX supportguider p&aring; support.box.com, om inte dessa hj&auml;lper dig s&aring; kontaktar du KTH IT-Support f&ouml;r hj&auml;lp.</p></div>
+  
+  <button class="accordion"> Vilken epostadress skall anv&auml;ndas f&ouml;r inloggning i KTH BOX?</button>
+    <div class="panel">
+      <p> F&ouml;r KTH BOX s&aring; kommer anv&auml;ndarnamn@kth.se vara inloggningsuppgifterna. Inga andra epostadresser kommer att till&aring;tas f&ouml;r inloggning.</p></div>
+  
+  <button class="accordion"> Vilken epostadress skall jag anv&auml;nda f&ouml;r att bjuda in anst&auml;llda till KTH box?</button>
+    <div class="panel">
+      <p> D&aring; vi endast kommer att anv&auml;nda @kth.se adresser f&ouml;r BOX , s&aring; man man skicka inbjudan till anv&auml;ndarnamn@kth.se.</p></div>
+  
+  ​
+  <button class="accordion"> Vad f&aring;r jag spara i KTH BOX?</button>
+    <div class="panel">
+      <p> Du kan spara information som inneh&aring;ller personuppgifter p&aring; BOX, tex inneh&aring;ller namn, efternamn, hemmaadresser, personnummer mm. BOX &auml;r ett personuppgiftsbitr&auml;de d&aring; de skrivit ett personuppgiftsbitr&auml;desavtal med SUNET och som uppfyller kraven som st&auml;lls runt GDPR.</p></div>
+  
+  <button class="accordion"> Kan jag l&auml;gga sekretessbelagd p&aring; BOX?</button>
+    <div class="panel">
+      <p> 
+          <pre>KTH har inte gjort en egen bed&ouml;mning ang&aring;ende sekretessbelagd information utan vi anv&auml;nder oss av Chalmers, Link&ouml;pings och Ume&aring; universitets risk och s&aring;rbarhetsanalyser ang&aring;ende BOX.
+  
+  Information som lagras p&aring; BOX skall inte vara klassifierad som sekretessbelagd eller skyddsv&auml;rd d&aring; avtalen med Box inneh&aring;ller inget skydd mot att annat lands lagstiftning till&auml;mpas och Box inte kan avtala bort den amerikanska lagstiftningen i detta avseende.
+  
+    Skyddsv&auml;rd information &auml;r:
+    • information som &auml;r sekretessbelagt enligt OSL (2009:400)
+    • information som KTH genom avtal lovat h&aring;lla hemligt
+    • information som kan leda till patent
+    • information som i or&auml;tta h&auml;nder kan orsaka KTH stor ekonomisk eller verksamhetsm&auml;ssig skada
+   
+  
+  Om du har ett separat avtal som reglerar hur du skall hantera din information, s&aring; m&aring;ste du se till att parten du har avtal med godk&auml;nner att du f&aring;r lagra information p&aring; Box.
+  
+  Mer information om s&auml;kerheten p&aring; BOX, Box Security Whitepaper.
+  
+  Riskanalyser f&ouml;r nedladdning
+  
+  UmU-riskanalys_boxtj&auml;nst-243-2537-12
+  
+  LIU-2012-01193  Risk och s&aring;rbarhetsanalys av Box
+  
+  Chalmers Risk och s&aring;rbarhetsanalys av Box 20120831
+   </pre></p></div>
+  
+  <button class="accordion"> Vem kan komma &aring;t mina filer?</button>
+    <div class="panel">
+      <p> Filerna som finns p&aring; BOX kan komma &aring;t av de du delat ut de till samt KTH's administrat&ouml;rer av tj&auml;nsten.</p></div>
+  
+  <button class="accordion">Fr&aring;ga: Varf&ouml;r box och inte andra l&ouml;sningar som dropbox, Onedrive, google drive?</button>
+    <div class="panel">
+      <p> BOX &auml;r den enda leverant&ouml;ren som har klarat av alla krav som st&auml;lldes vid upphandlingen av tj&auml;nsten, krav centraliserad anv&auml;ndarhantering, SSO, krypterad lagring, PUL, EU model contracts mm.</p></div>
+  
+  <button class="accordion"> Kommer Box klienten att installeras p&aring; KTH Windows (WIKS) plattformen?</button>
+  <div class="panel">
+      <p> Ja, Box klienten kan installeras p&aring; KTH Windows (WIKS) datorer. Du kan best&auml;lla installationen av applikationen via KTH IT-Support.</p></div>
+  
+  <button class="accordion"> Kommer Box klienten att installeras p&aring; KTH Mac plattformen?</button>
+  <div class="panel">
+      <p> Ja, Box klienten kan installeras p&aring; KTH Mac datorer. Du kan best&auml;lla installationen av applikationen via KTH IT-Support.</p></div>
+  
+  <button class="accordion"> P&aring; vilka plattformar finns box?</button>
+    <div class="panel">
+      <p> BOX klienten finns p&aring; windows, mac, ios och android.</p></div>
+  
+  <button class="accordion"> Varf&ouml;r finns det ingen linux klient</button>
+    <div class="panel">
+      <p> Tyv&auml;rr s&aring; finns det ingen klient f&ouml;r BOX. Linux anv&auml;ndare &auml;r h&auml;nvisade till webklienten.</p></div>
+  
+  <button class="accordion"> Varf&ouml;r kan jag inte editera filer p&aring; box via tj&auml;nster som google apps, mm?</button>
+    <div class="panel">
+      <p> Detta d&aring; KTH inte har avtal med dessa leverant&ouml;rer ang&aring;ende PUL och d&aring; kan vi inte erbjuda integration med dessa tj&auml;nster.</p></div>
+  
+  <button class="accordion"> Vem ansvarar f&ouml;r filerna p&aring; BOX?</button>
+    <div class="panel">
+      <p> Du som anv&auml;ndare av BOX ansvarar f&ouml;r informationen som finns i BOX.</p></div>
+  
+  <button class="accordion"> Tar KTH backup p&aring; box?</button>
+    <div class="panel">
+      <p> KTH tar inte backup p&aring; filerna p&aring; box, du som anv&auml;ndare &auml;r ansvarig f&ouml;r filerna som finns p&aring; box.</p></div>
+  
+  <button class="accordion"> Vad h&auml;nder n&auml;r jag tar bort en/flera fil/er?</button>
+    <div class="panel">
+      <p>N&auml;r du tar bort en fil s&aring; flyttas filen till papperskorgen (Trash). Filerna finns kvar i papperskorgen s&aring; l&auml;nge kontot finns aktivt. Mer information om hur du anv&auml;nder papperskorgen (Trash) finns p&aring; f&ouml;ljande plats " Managing files and folders "</p></div>
+  
+  
+  <button class="accordion"> Kan stipendiater, postdoktorala studenter f&aring; tillg&aring;ng till BOX?</button>
+    <div class="panel">
+      <p> Stipendiater och postdoktorala studenter r&auml;knar vi som studenter och f&aring;r inte tillg&aring;ng till KTH Box.</p></div>
+  
+  <button class="accordion"> Hur ser finansieringen av BOX p&aring; KTH?</button>
+    <div class="panel">
+      <p> Denna tj&auml;nst kommer att finansieras av IT-Avdelningen f&ouml;r KTH anst&auml;llda.</p></div>
+  
+  <button class="accordion"> Kommer studenter att f&aring; tillg&aring;ng till box?</button>
+    <div class="panel">
+      <p> Inte i dagsl&auml;get.</p></div>
+  
+  <button class="accordion"> Hur s&auml;ker &auml;r BOX?</button>
+    <div class="panel">
+      <p> Allt som kommunikationen till BOX &auml;r krypterat med SSL samt all information som &auml;r lagrad hos BOX &auml;r krypterad.</p></div>
+  
+  <button class="accordion"> Vad h&auml;nder med BOX om jag byter anv&auml;ndarnamn?</button>
+    <div class="panel">
+      <p> Anv&auml;ndarnamnet i BOX kommer att uppdateras automatiskt. Du kan komma att beh&ouml;va att logga in igen med det nya anv&auml;ndarnamnet.</p></div>
+  
+  <button class="accordion"> Varf&ouml;r kan jag inte t&ouml;mma papperskorgen i Box?</button>
+    <div class="panel">
+      <p> Som standard p&aring; Box s&aring; rensas papperskorgen automatiskt efter en tidpunkt och f&ouml;r att undvika att man tappar information s&aring; har vi st&auml;ngt av funktionen f&ouml;r alla anv&auml;ndare. Du som anv&auml;ndare kommer ocks&aring; enklare att &aring;terskapa filer d&aring; de inte tas bort. Om du vill t&ouml;mma papperskorgen s&aring; kan du kontakta it-support@kth.se via epost och beg&auml;ra att din papperskorg skall t&ouml;mmas. </p></div>
+  
+  <button class="accordion"> Hur l&auml;nge har jag tillg&aring;ng till Box?</button>
+    <div class="panel">
+      <p> S&aring; l&auml;nge du &auml;r anst&auml;lld p&aring; KTH s&aring; kommer du att ha tillg&aring;ng till Box. N&auml;r anst&auml;llningen avslutas s&aring; st&auml;ngs tillg&aring;ngen till Box av. Se n&auml;r ditt KTH Box-konto avslutas</p></div>
+  
+  <button class="accordion"> Jag har inte l&auml;ngre tillg&aring;ng till Box men beh&ouml;ver f&aring; tag p&aring; information som fanns p&aring; mitt Box konto.</button>
+    <div class="panel">
+      <p> Om konton inte blivit borttaget s&aring; kan du f&aring; tillg&aring;ng till informationen om din d&aring;varande chef godk&auml;nner detta.</p></div>
+  
+  <button class="accordion"> Hur flyttar jag &auml;garskapet p&aring; en delad folder till annan person?</button>
+    <div class="panel">
+      <p> Du g&ouml;r det genom att f&ouml;lja f&ouml;ljande lathund p&aring; Box, How do i change the owner of a folder</p></div>
+  
+  <button class="accordion"> Kan opersonliga konton ha ett konto i KTH Box, tex avdelning@kth.se.</button>
+    <div class="panel">
+      <p>  Opersonliga konton som avdelningar/funktionsadresser mm kan inte ha ett KTH Box konto. Konton i Box &auml;r personliga.</p></div>
+
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>
